@@ -191,10 +191,22 @@ $result = $conn->query($sql);
         </div>
         <p class="welcome-text">View and manage all registered vendors in the system.</p>
 
-        <?php if ($result->num_rows > 0): ?>
-            <div style="margin-bottom: 1rem;">
+        <div style="margin-bottom: 1.5rem;">
+            <?php if ($result->num_rows > 0): ?>
                 <p style="font-size: 1rem; color: #2c3e2b;">Total Vendors: <strong><?php echo $result->num_rows; ?></strong></p>
+            <?php endif; ?>
+
+            <div style="margin-top: 1rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+                <button onclick="window.print()" style="background: #2e7d32; color: white; border: none; padding: 0.5rem 1rem; border-radius: 8px; cursor: pointer; font-weight: 600; display: inline-flex; align-items: center; gap: 8px;">
+                    <i class="fas fa-print"></i> Print List
+                </button>
+                <a href="vendor.html" style="background: #4caf50; color: white; text-decoration: none; padding: 0.5rem 1rem; border-radius: 8px; font-weight: 600; display: inline-flex; align-items: center; gap: 8px;">
+                    <i class="fas fa-plus"></i> Add New Vendor
+                </a>
             </div>
+        </div>
+
+        <?php if ($result->num_rows > 0): ?>
 
             <table>
                 <thead>
