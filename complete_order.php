@@ -16,7 +16,7 @@ if ($conn->connect_error) {
 // Check if form was submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    // Get form data
+    // Variable declaration and Getting form data
     $order_id = mysqli_real_escape_string($conn, $_POST['order_id']);
     $pdt_id = mysqli_real_escape_string($conn, $_POST['pdt_id']);
     $f_id = mysqli_real_escape_string($conn, $_POST['f_id']);
