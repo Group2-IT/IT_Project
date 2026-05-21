@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>>Online Vegetable Sales And Marketing Information System Our products in stock.</title>
+<style>
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Header - clean gradient */
+        header {
+            background: linear-gradient(135deg, #1b5e20 0%, #0a3b0e 100%);
+            color: white;
+            text-align: center;
+            padding: 2rem 1.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+        header::before {
+            content: "🌿";
+            font-size: 180px;
+            opacity: 0.08;
+            position: absolute;
+            bottom: -30px;
+            right: -20px;
+            pointer-events: none;
+        }
+        header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+            max-width: 900px;
+            margin: 0 auto;
+            text-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* Navigation - modern glass-morphism style */
+        nav {
+            background: rgba(255, 255, 255, 0.96);
+            backdrop-filter: blur(4px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(46, 125, 50, 0.2);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        nav ul li a {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 1rem 1.6rem;
+            color: #1f3b1a;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.25s ease;
+            border-bottom: 3px solid transparent;
+        }
+        nav ul li a i {
+            font-size: 1rem;
+            color: #2e7d32;
+        }
+        nav ul li a:hover {
+            color: #1b5e20;
+            background: #eef5e9;
+            border-bottom-color: #2e7d32;
+        }
+        nav ul li a:active {
+            transform: scale(0.97);
+        }
+
+
+    /* Existing styles for cards */
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      line-height: 1.5;
+    }
+
+   
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .card {
+      background: white;
+      width: 250px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card-content h3 {
+      margin: 0;
+      color: #2e7d32;
+    }
+
+    .price {
+      color: #ff6f00;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .card-content p {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.5;
+    }
+          /* Footer refined */
+        footer {
+            background: #0f2a0c;
+            color: #d0e6c8;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 2rem;
+            font-size: 0.85rem;
+            border-top: 1px solid #2a5a24;
+        }
+</style>
+</head> 
+<body>   
+    <header>
+        <h1>ONLINE VEGETABLE SALES AND MARKETING INFORMATION SYSTEM</h1>
+    </header>
+     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<nav>
+    <ul>
+        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="vegetables_in_stock.html"><i class="fas fa-carrot"></i> vegetables in stock</a></li>
+        <li><a href="login.php"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+    </ul>
+</nav>
+
+  <div class="container">
+    <div class="card">
+      <img src="pics\carrots.jpg" alt="Carrot">
+      <div class="card-content">
+        <h3>Carrot</h3>
+        <div class="price">shs3240 / kg</div>
+        <p>Rich in vitamin A and great for healthy eyesight.</p>
+      </div>
+    </div>
+
+    <!-- Broccoli -->
+    <div class="card">
+      <img src="pics\broccoli.jpg" alt="Broccoli">
+      <div class="card-content">
+        <h3>Broccoli</h3>
+        <div class="price">shs5100 / kg</div>
+        <p>Packed with nutrients, antioxidants, and fiber.</p>
+      </div>
+    </div>
+
+    <!-- Tomato -->
+    <div class="card">
+      <img src="pics\tomatoes.jpg" alt="Tomato">
+      <div class="card-content">
+        <h3>Tomato</h3>
+        <div class="price">shs1500/ kg</div>
+        <p>Fresh and juicy tomatoes perfect for salads and sauces.</p>
+      </div>
+    </div>
+
+    <!-- Cabbage -->
+    <div class="card">
+      <img src="pics\cabbage.jpg" alt="Cabbage">
+      <div class="card-content">
+        <h3>Cabbage</h3>
+        <div class="price">shs2210 / kg</div>
+        <p>Leafy green vegetable rich in vitamins and minerals.</p>
+      </div>
+    </div>
+
+    <!-- Green Pepper -->
+    <div class="card">
+      <img src="pics\green_pepper.jpg" alt="Green Pepper">
+      <div class="card-content">
+        <h3>Green Pepper</h3>
+        <div class="price">shs3100 / kg</div>
+        <p>Fresh green peppers loaded with vitamin C and flavor.</p>
+      </div>
+    </div>
+
+    <!-- Onions -->
+    <div class="card">
+      <img src="pics\onions.jpg" alt="Onions">
+      <div class="card-content">
+        <h3>Onions</h3>
+        <div class="price">shs1800 / kg</div>
+        <p>Fresh onions with a pungent flavor perfect for cooking.</p>
+      </div>
+    </div>
+
+    <!-- Garlic -->
+    <div class="card">
+      <img src="pics\garlic.jpg" alt="Garlic">
+      <div class="card-content">
+        <h3>Garlic</h3>
+        <div class="price">shs2500 / kg</div>
+        <p>Aromatic garlic cloves great for flavoring and health benefits.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Online Vegetable Sales And Marketing Information System</p>
+  </footer>
+
+</body>
+  </html>
